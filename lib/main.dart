@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:your_doctor/data.dart';
 import 'package:your_doctor/screens/Home.dart';
+import 'package:your_doctor/screens/serch.dart';
 import 'package:your_doctor/screens/splash_screen.dart';
+
+import 'Verify.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
         Locale('ar', 'AE'),
       ],
       theme: ThemeData(fontFamily: 'cairo'),
-      home: SplashScreen(),
+      home: serch(),
     );
   }
 }
